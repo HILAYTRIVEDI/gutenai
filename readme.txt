@@ -35,13 +35,19 @@ The `RichText` input for keywords includes a debounced change handler, reducing 
 
 ### Preview
 
+#### Setup API Key
+https://www.awesomescreenshot.com/video/36790551?key=3065f64764767578741e000369e77140
 
+#### BLock Usage
+https://www.awesomescreenshot.com/video/36790617?key=2962ee147f1c188a2511ab1945632d4e
+
+----------------------
 
 ## License
 This plugin is licensed under GPL-2.0-or-later.
 
 ## Author
-Developed by [Your Name] as a demonstration of WordPress best practices for the Full Stack Developer position at 10up.
+![Hilay Trivedi](https://github.com/HILAYTRIVEDI/)
 
 ---
 
