@@ -1,55 +1,49 @@
-=== Guten Ai ===
-Contributors:      The WordPress Contributors
-Tags:              block
-Tested up to:      6.7
-Stable tag:        0.1.0
-License:           GPL-2.0-or-later
-License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+# GutenAI - AI-Powered Content Suggestions for Gutenberg
 
-Example block scaffolded with Create Block tool.
+## Overview
+**GutenAI** is a WordPress plugin that enhances the Gutenberg editor with AI-powered content suggestions. It analyzes post content and provides keyword recommendations to improve SEO, engagement, and relevance. This plugin demonstrates best practices in API integration, performance optimization, and WordPress data management.
 
-== Description ==
+## Features
+- **AI-Powered Content Suggestions**: Analyzes post content and suggests relevant keywords using the Dandelion API.
+- **Seamless Gutenberg Integration**: Provides an intuitive sidebar UI for keyword recommendations.
+- **Optimized for Performance**: Utilizes debouncing and efficient state management to minimize unnecessary re-renders.
+- **Secure API Communication**: Implements `wp_safe_remote_get()` for secure data fetching.
+- **Scalable Architecture**: Follows WordPress coding standards with autoloading for better maintainability.
 
-This is the long description. No limit, and you can use Markdown (as well as in the following sections).
+## Key Components
+### 1. **AI Content Suggestion Block**
+A Gutenberg block that:
+- Analyzes the current post content.
+- Fetches relevant keywords via the Dandelion API.
+- Displays keyword suggestions dynamically in the editor sidebar.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+### 2. **Singleton Plugin Architecture**
+The plugin follows a singleton pattern to ensure a single instance of the core class, `GutenAI\Inc\Plugin`, improving performance and maintainability.
 
-== Installation ==
+### 3. **Debounced Input Handling**
+The `RichText` input for keywords includes a debounced change handler, reducing unnecessary API calls and improving user experience.
 
-This section describes how to install the plugin and get it working.
+## Installation
+### From WordPress Admin:
+1. Go to **Plugins > Add New**.
+2. Click **Upload Plugin** and select the `gutenai.zip` file.
+3. Click **Install Now**, then **Activate**.
 
-e.g.
+### Manually via FTP:
+1. Upload the `gutenai` folder to `/wp-content/plugins/`.
+2. Activate the plugin from **Plugins > Installed Plugins** in the WordPress admin.
 
-1. Upload the plugin files to the `/wp-content/plugins/guten-ai` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
+### Preview
 
 
-== Frequently Asked Questions ==
 
-= A question that someone might have =
+## License
+This plugin is licensed under GPL-2.0-or-later.
 
-An answer to that question.
+## Author
+Developed by [Your Name] as a demonstration of WordPress best practices for the Full Stack Developer position at 10up.
 
-= What about foo bar? =
+---
 
-Answer to foo bar dilemma.
+This README provides a structured overview of the plugin, making it easy for reviewers to understand its purpose, functionality, and key areas to evaluate.
 
-== Screenshots ==
-
-1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
-the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
-directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png`
-(or jpg, jpeg, gif).
-2. This is the second screen shot
-
-== Changelog ==
-
-= 0.1.0 =
-* Release
-
-== Arbitrary section ==
-
-You may provide arbitrary sections, in the same format as the ones above. This may be of use for extremely complicated
-plugins where more information needs to be conveyed that doesn't fit into the categories of "description" or
-"installation." Arbitrary sections will be shown below the built-in sections outlined above.
