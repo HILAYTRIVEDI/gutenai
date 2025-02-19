@@ -48,8 +48,3 @@ This plugin is licensed under GPL-2.0-or-later.
 
 ## Author
 ![Hilay Trivedi](https://github.com/HILAYTRIVEDI/)
-
----
-
-This README provides a structured overview of the plugin, making it easy for reviewers to understand its purpose, functionality, and key areas to evaluate.
-
