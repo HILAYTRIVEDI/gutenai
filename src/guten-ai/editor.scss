@@ -1,0 +1,52 @@
+.gutenai-keywords{
+    &-block{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border: 1px solid #007cba;
+        border-radius: 4px;
+    }
+
+    &-fetch{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        margin-bottom: 32px;
+
+        @media screen and (max-width: 600px){
+            flex-direction: column;
+        }
+    }
+
+    &-list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &-editor{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+        margin-top: 20px;
+        border-top: 1 px solid #007cba;
+        @media screen and (max-width: 600px){
+            flex-direction: column;
+        }
+        label{
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    &-input{
+        margin: 0;
+        padding: 20px;
+        border: 1px solid #007cba;
+        border-radius: 4px;
+    }
+}

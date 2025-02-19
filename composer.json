@@ -1,0 +1,25 @@
+{
+    "name": "gutenai/plugin",
+    "description": "GutenAI - AI-powered content suggestions for Gutenberg blocks.",
+    "type": "wordpress-plugin",
+    "homepage": "https://your-plugin-homepage.com/",
+    "license": "GPL-2.0-or-later",
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.0",
+        "phpcompatibility/phpcompatibility-wp": "^2.1",
+        "automattic/vipwpcs": "^3.0",
+        "dealerdirect/phpcodesniffer-composer-installer": "1.0.0",
+        "sirbrillig/phpcs-variable-analysis": "^2.11.3"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "scripts": {
+        "phpcs": "@php ./vendor/bin/phpcs",
+        "phpcs:fix": "@php ./vendor/bin/phpcbf"
+    }
+}

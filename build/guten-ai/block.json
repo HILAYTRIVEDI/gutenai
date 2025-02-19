@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/guten-ai",
+  "version": "0.1.0",
+  "title": "GutenAI Content Suggestions",
+  "category": "widgets",
+  "icon": "lightbulb",
+  "description": "GutenAI Content Suggestions block. Use this block to get AI-powered Keywords suggestions.",
+  "keywords": [
+    "gutenai",
+    "content",
+    "suggestions"
+  ],
+  "supports": {
+    "html": false,
+    "anchor": true,
+    "align": [
+      "wide",
+      "full"
+    ],
+    "reusable": true,
+    "color": {
+      "gradients": true,
+      "link": true
+    },
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "attributes": {
+    "keywords": {
+      "type": "array",
+      "default": []
+    },
+    "generatedKeywords": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "textdomain": "guten-ai",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
