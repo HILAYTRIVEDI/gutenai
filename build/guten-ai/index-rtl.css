@@ -1,1 +1,52 @@
-.gutenai-keywords-block{border:1px solid #007cba;border-radius:4px;display:flex;flex-direction:column;padding:20px}.gutenai-keywords-fetch{align-items:center;display:flex;gap:16px;justify-content:space-between;margin-bottom:32px}@media screen and (max-width:600px){.gutenai-keywords-fetch{flex-direction:column}}.gutenai-keywords-list{align-items:center;display:flex;flex-wrap:wrap;gap:16px}.gutenai-keywords-editor{border-top:1 solid #007cba;display:flex;flex-direction:column;gap:16px;justify-content:space-between;margin-top:20px}@media screen and (max-width:600px){.gutenai-keywords-editor{flex-direction:column}}.gutenai-keywords-editor label{font-size:16px;font-weight:600;margin:0}.gutenai-keywords-input{border:1px solid #007cba;border-radius:4px;margin:0;padding:20px}
+/*!*************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/guten-ai/editor.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************/
+.gutenai-keywords-block {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid #007cba;
+  border-radius: 4px;
+}
+.gutenai-keywords-fetch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width: 600px) {
+  .gutenai-keywords-fetch {
+    flex-direction: column;
+  }
+}
+.gutenai-keywords-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+.gutenai-keywords-editor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+  border-top: 1 px solid #007cba;
+}
+@media screen and (max-width: 600px) {
+  .gutenai-keywords-editor {
+    flex-direction: column;
+  }
+}
+.gutenai-keywords-editor label {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.gutenai-keywords-input {
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #007cba;
+  border-radius: 4px;
+}
