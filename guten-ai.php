@@ -14,8 +14,9 @@
  * @package GutenAI
  */
 
+
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly.
+	exit;
 }
 
 // Define plugin constants.
@@ -81,8 +82,8 @@ function guten_ai_block_init(): void {
 	if ( class_exists( 'GutenAI\Inc\Plugin' ) ) {
 		GutenAI\Inc\Plugin::get_instance();
 	}
-
-	register_block_type( GUTENAI_PLUGIN_PATH . 'build/guten-ai' );
+	
+	register_block_type( GUTENAI_PLUGIN_URL . 'build/guten-ai' );
 }
 
 guten_ai_block_init();

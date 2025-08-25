@@ -53,8 +53,8 @@ function autoloader( $resource = '' ) { // phpcs:ignore Universal.NamingConventi
 				$file_name = sprintf( 'trait-%s.php', trim( strtolower( $path_segments[2] ) ) );
 				break;
 			default:
-				$directory = 'classes';
-				$file_name = sprintf( 'class-%s', trim( strtolower( $path_segments[1] ) ) );
+			   $directory = 'classes';
+			   $file_name = sprintf( 'class-%s.php', trim( strtolower( $path_segments[1] ) ) );
 				break;
 		}
 	}
